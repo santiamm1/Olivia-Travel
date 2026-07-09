@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Travel | Viajes Inolvidables</title>
+    <meta name="description" content="Descubre el mundo con Olivia Travel.">
+    <link rel="icon" type="image/png" href="img/logo/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="brand">
+                <img src="img/logo/olivia-travel-logo.png" alt="Olivia Travel">
+            </a>
+            <button class="mobile-menu-btn">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Viajes Grupales</a></li>
+                <li><a href="viajes-a-medida.html">Viajes a Medida</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            <div style="font-weight: 500; font-size: 14px; cursor:pointer;">Contacto</div>
+        </div>
+    </nav>
+
+    <!-- Hero / Slider Section -->
+    <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/iguazu.mp4" type="video/mp4">
+            </video>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2 class="slide-title">Cataratas del Iguazú</h2>
+                <p class="slide-subtitle">Maravilla Natural - 15 de Noviembre 2026</p>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide">
+            <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/machu-pichu.mp4" type="video/mp4">
+            </video>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2 class="slide-title">Machu Picchu Mágico</h2>
+                <p class="slide-subtitle">Aventura Andina - 10 de Octubre 2026</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/venecia.mp4" type="video/mp4">
+            </video>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2 class="slide-title">Encanto Veneciano</h2>
+                <p class="slide-subtitle">Viaje Romántico - 5 de Diciembre 2026</p>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+        <!-- Search Bar Overlay -->
+        <div class="hero-search-wrapper">
+            <div class="search-bar-pill">
+                <div class="search-segment">
+                    <span class="search-segment-label">Dónde</span>
+                    <span class="search-segment-value">Explorar destinos</span>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-segment">
+                    <span class="search-segment-label">Cuándo</span>
+                    <span class="search-segment-value">Añadir fechas</span>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-segment">
+                    <span class="search-segment-label">Quién</span>
+                    <span class="search-segment-value">Añadir viajeros</span>
+                </div>
+                <div class="search-orb">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:16px;width:16px;stroke:currentColor;stroke-width:4;overflow:visible"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <h2 class="section-title">Viajes Grupales</h2>
+
+        <div class="tours-grid">
+            <!-- Property Card 1 -->
+            <a href="viaje-irlanda.html" class="property-card" style="color: inherit; text-decoration: none;">
+                <div class="property-photo-container">
+                    <img src="img/tour_ireland_1783543516811.png" alt="Irlanda" style="width: 100%; height: 100%; object-fit: cover;">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Irlanda & Gran Bretaña</div>
+                    <div class="body-sm-muted">Salida Grupal</div>
+                    <div class="body-sm-muted">2 de Septiembre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600; color: var(--colors-primary);">Ver detalles &rarr;</span></div>
+                </div>
+            </a>
+
+            <!-- Property Card 2 -->
+            <div class="property-card">
+                <div class="property-photo-container">
+                    <img src="img/tour_turkey_1783543526261.png" alt="Turquía">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Turquía De Lujo</div>
+                    <div class="body-sm-muted">Aventura en Globo</div>
+                    <div class="body-sm-muted">21 de Septiembre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600;">Consultar tarifa</span></div>
+                </div>
+            </div>
+
+            <!-- Property Card 3 -->
+            <div class="property-card">
+                <div class="property-photo-container">
+                    <img src="img/tour_tuscany_1783543557539.png" alt="Toscana">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Toscana Y Umbría</div>
+                    <div class="body-sm-muted">Relax y Viñedos</div>
+                    <div class="body-sm-muted">4 de Octubre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600;">Consultar tarifa</span></div>
+                </div>
+            </div>
+
+            <!-- Property Card 4 -->
+            <div class="property-card">
+                <div class="property-photo-container">
+                    <img src="img/tour_europe_1783543578673.png" alt="Europa">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Europa Central</div>
+                    <div class="body-sm-muted">Cultura y Arquitectura</div>
+                    <div class="body-sm-muted">8 de Septiembre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600;">Consultar tarifa</span></div>
+                </div>
+            </div>
+            
+            <!-- Property Card 5 -->
+            <div class="property-card">
+                <div class="property-photo-container">
+                    <img src="img/tour_italy_1783543586965.png" alt="Sur de Italia">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Sur De Italia</div>
+                    <div class="body-sm-muted">Costa Amalfitana</div>
+                    <div class="body-sm-muted">3 de Octubre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600;">Consultar tarifa</span></div>
+                </div>
+            </div>
+            
+            <!-- Property Card 6 -->
+            <div class="property-card">
+                <div class="property-photo-container">
+                    <img src="img/tour_tuscany_1783543557539.png" alt="Lagos de Italia">
+                    <button class="heart-btn">&#9825;</button>
+                </div>
+                <div class="property-meta">
+                    <div class="title-md">Lagos de Italia</div>
+                    <div class="body-sm-muted">Sur de Francia</div>
+                    <div class="body-sm-muted">7 de Octubre 2026</div>
+                    <div class="body-sm" style="margin-top: 4px;"><span style="font-weight:600;">Consultar tarifa</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+            <button class="button-primary">Mostrar más destinos</button>
+        </div>
+    </main>
+    <!-- Sold Out Tours Section -->
+    <section class="main-container" style="padding-top: 0;">
+        <h2 class="section-title" style="margin-top: var(--spacing-lg);">Tours 2026 Completos</h2>
+        
+        <div class="scroller-wrapper">
+            <button class="scroller-btn prev">&#10094;</button>
+            <div class="horizontal-scroller" id="soldOutScroller">
+                <!-- Sold out Card 1 -->
+                <div class="property-card">
+                    <div class="property-photo-container">
+                        <img src="img/tour_italy_1783543586965.png" alt="Sur de Italia">
+                        <div class="sold-out-badge">Completo</div>
+                    </div>
+                    <div class="property-meta opacity-muted">
+                        <div class="title-md">Sur de Italia</div>
+                        <div class="body-sm-muted">17 de Mayo 2026</div>
+                    </div>
+                </div>
+
+                <!-- Sold out Card 2 -->
+                <div class="property-card">
+                    <div class="property-photo-container">
+                        <img src="img/tour_europe_1783543578673.png" alt="Suiza, Lago de Como & Milan">
+                        <div class="sold-out-badge">Completo</div>
+                    </div>
+                    <div class="property-meta opacity-muted">
+                        <div class="title-md">Suiza, Lago de Como & Milan</div>
+                        <div class="body-sm-muted">7 de Julio 2026</div>
+                    </div>
+                </div>
+
+                <!-- Sold out Card 3 -->
+                <div class="property-card">
+                    <div class="property-photo-container">
+                        <img src="img/tour_tuscany_1783543557539.png" alt="Norte de Italia">
+                        <div class="sold-out-badge">Completo</div>
+                    </div>
+                    <div class="property-meta opacity-muted">
+                        <div class="title-md">Norte de Italia</div>
+                        <div class="body-sm-muted">24 de Abril 2026</div>
+                    </div>
+                </div>
+
+                <!-- Sold out Card 4 -->
+                <div class="property-card">
+                    <div class="property-photo-container">
+                        <img src="img/tour_turkey_1783543526261.png" alt="Sudáfrica">
+                        <div class="sold-out-badge">Completo</div>
+                    </div>
+                    <div class="property-meta opacity-muted">
+                        <div class="title-md">Sudáfrica</div>
+                        <div class="body-sm-muted">10 de Octubre 2026</div>
+                    </div>
+                </div>
+
+                <!-- Sold out Card 5 -->
+                <div class="property-card">
+                    <div class="property-photo-container">
+                        <img src="img/tour_ireland_1783543516811.png" alt="Puglia">
+                        <div class="sold-out-badge">Completo</div>
+                    </div>
+                    <div class="property-meta opacity-muted">
+                        <div class="title-md">Puglia</div>
+                        <div class="body-sm-muted">8 de Junio 2026</div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroller-btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-light">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="title-sm">Asistencia</div>
+                <a href="#" class="footer-link">Centro de ayuda</a>
+                <a href="#" class="footer-link">Contacto</a>
+                <a href="#" class="footer-link">Condiciones de Viaje</a>
+            </div>
+            <div class="footer-col">
+                <div class="title-sm">Nuestra Empresa</div>
+                <a href="#" class="footer-link">Acerca de nosotros</a>
+                <a href="#" class="footer-link">Términos y condiciones</a>
+                <a href="#" class="footer-link">Política de privacidad</a>
+            </div>
+            <div class="footer-col">
+                <div class="title-sm">Información Legal</div>
+                <a href="#" class="footer-link">EVT Leg. 13181 RES 1315/8</a>
+                <a href="#" class="footer-link">Gorostiaga 2355 Piso 4to. Oficina 404</a>
+                <a href="#" class="footer-link">Buenos Aires, Argentina</a>
+            </div>
+        </div>
+        <div class="legal-band">
+            <div>
+                © 2026 Olivia Travel, Inc. · Privacidad · Términos · Mapa del sitio
+            </div>
+            <div style="display:flex; gap: 16px;">
+                <span style="font-weight:600; cursor:pointer;">Español (AR)</span>
+                <span style="font-weight:600; cursor:pointer;">$ USD</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple script for heart button toggle
+        document.querySelectorAll('.heart-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                btn.classList.toggle('saved');
+                btn.innerHTML = btn.classList.contains('saved') ? '&#9829;' : '&#9825;';
+            });
+        });
+    </script>
+</body>
+</html>

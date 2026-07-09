@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes a Medida | Olivia Travel</title>
+    <meta name="description" content="Viajes a medida por Olivia Travel.">
+    <link rel="icon" type="image/png" href="img/logo/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="brand">
+                <img src="img/logo/olivia-travel-logo.png" alt="Olivia Travel">
+            </a>
+            <button class="mobile-menu-btn">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Viajes Grupales</a></li>
+                <li><a href="viajes-a-medida.html" class="active">Viajes a Medida</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            <div style="font-weight: 500; font-size: 14px; cursor:pointer;">Contacto</div>
+        </div>
+    </nav>
+
+    <!-- Internal Hero Banner -->
+    <section class="internal-hero">
+        <video class="internal-hero-img" autoplay muted loop playsinline>
+            <source src="videos/venecia.mp4" type="video/mp4">
+        </video>
+        <div class="internal-hero-overlay">
+            <div class="internal-hero-content">
+                <span class="badge-tag">Experiencia Personalizada</span>
+                <h1 class="internal-hero-title">Viajes a Medida</h1>
+                <p class="internal-hero-subtitle">El mundo a tu propio ritmo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viajes a Medida Section -->
+    <section class="main-container" id="viajes-medida">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: var(--spacing-section); margin-bottom: 48px;">
+            <div>
+                <h2 class="section-title" style="margin-top: 0; margin-bottom: 8px;">Viajes a Medida</h2>
+                <p class="body-md">Diseñamos tu viaje ideal, personalizado según tus gustos y preferencias.</p>
+            </div>
+        </div>
+
+        <div class="medida-grid">
+            <div class="medida-card">
+                <img src="img/tour_europe_1783543578673.png" alt="Europa Central">
+                <div class="medida-overlay">
+                    <h3 class="medida-title">Europa a tu ritmo</h3>
+                    <button class="medida-btn" data-destination="Europa a tu ritmo">Solicitar cotización</button>
+                </div>
+            </div>
+            
+            <div class="medida-card">
+                <img src="img/tour_turkey_1783543526261.png" alt="Turquía">
+                <div class="medida-overlay">
+                    <h3 class="medida-title">Exotismo en Turquía</h3>
+                    <button class="medida-btn" data-destination="Exotismo en Turquía">Solicitar cotización</button>
+                </div>
+            </div>
+
+            <div class="medida-card">
+                <img src="img/tour_italy_1783543586965.png" alt="Italia">
+                <div class="medida-overlay">
+                    <h3 class="medida-title">Tesoros de Italia</h3>
+                    <button class="medida-btn" data-destination="Tesoros de Italia">Solicitar cotización</button>
+                </div>
+            </div>
+
+            <div class="medida-card">
+                <img src="img/tour_ireland_1783543516811.png" alt="Irlanda">
+                <div class="medida-overlay">
+                    <h3 class="medida-title">Magia Celta</h3>
+                    <button class="medida-btn" data-destination="Magia Celta">Solicitar cotización</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-light" style="margin-top: var(--spacing-section);">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="title-sm">Asistencia</div>
+                <a href="#" class="footer-link">Centro de ayuda</a>
+                <a href="#" class="footer-link">Contacto</a>
+                <a href="#" class="footer-link">Condiciones de Viaje</a>
+            </div>
+            <div class="footer-col">
+                <div class="title-sm">Nuestra Empresa</div>
+                <a href="#" class="footer-link">Acerca de nosotros</a>
+                <a href="#" class="footer-link">Términos y condiciones</a>
+                <a href="#" class="footer-link">Política de privacidad</a>
+            </div>
+            <div class="footer-col">
+                <div class="title-sm">Información Legal</div>
+                <a href="#" class="footer-link">EVT Leg. 13181 RES 1315/8</a>
+                <a href="#" class="footer-link">Gorostiaga 2355 Piso 4to. Oficina 404</a>
+                <a href="#" class="footer-link">Buenos Aires, Argentina</a>
+            </div>
+        </div>
+        <div class="legal-band">
+            <div>
+                © 2026 Olivia Travel, Inc. · Privacidad · Términos · Mapa del sitio
+            </div>
+            <div style="display:flex; gap: 16px;">
+                <span style="font-weight:600; cursor:pointer;">Español (AR)</span>
+                <span style="font-weight:600; cursor:pointer;">$ USD</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal-overlay" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Solicitar Cotización</h3>
+                <p class="modal-subtitle" id="modalDestinationText">Viaje a medida</p>
+            </div>
+            <form id="quoteForm">
+                <input type="hidden" id="destinationInput" name="destination">
+                <div class="form-group">
+                    <label class="form-label" for="name">Nombre completo</label>
+                    <input type="text" id="name" class="form-control" required placeholder="Ej. Ana García">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Correo electrónico</label>
+                    <input type="email" id="email" class="form-control" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dates">Fechas estimadas</label>
+                    <input type="text" id="dates" class="form-control" placeholder="Ej. Octubre 2026">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="passengers">Cantidad de pasajeros</label>
+                    <input type="number" id="passengers" class="form-control" min="1" value="2">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="details">Detalles adicionales</label>
+                    <textarea id="details" class="form-control" placeholder="Cuéntanos más sobre el viaje de tus sueños..."></textarea>
+                </div>
+                <button type="submit" class="button-primary" style="width: 100%; margin-top: var(--spacing-sm);">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
